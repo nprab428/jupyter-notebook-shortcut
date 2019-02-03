@@ -5,7 +5,7 @@ on run {input}
 				create tab with default profile
 			end tell
 			tell current session of current window
-				set thePath to POSIX path of i
+				set thePath to quoted form of the POSIX path of i
 				write text "jupyter notebook " & (thePath)
 			end tell
 		end tell
